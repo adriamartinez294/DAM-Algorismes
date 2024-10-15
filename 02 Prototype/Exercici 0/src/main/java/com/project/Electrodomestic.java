@@ -16,4 +16,24 @@ public abstract class Electrodomestic {
     }
 
     public abstract Electrodomestic clone();
+
+    public String getNom() {
+        return nom;
+    }
+
+    public int getPreu() {
+        return preu;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public String getEficiencia() {
+        return eficiencia;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
 }

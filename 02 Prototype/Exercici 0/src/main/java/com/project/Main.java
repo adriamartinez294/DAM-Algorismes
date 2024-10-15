@@ -44,7 +44,7 @@ public class Main {
         }
     }
 
-    static void compare (int i, Poligon a, Poligon b) {
+    static void compare (int i, Electrodomestic a, Electrodomestic b) {
         if (a == b) {
             System.out.println(i + ": Els Electrodomestics són el mateix objecte");
         } else {
@@ -55,6 +55,5 @@ public class Main {
                 System.out.println(i + ": Els Electrodomestics NO són identics");
             }
         }
-    }
     }
 }
