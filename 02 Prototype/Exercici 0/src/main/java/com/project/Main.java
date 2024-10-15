@@ -37,11 +37,6 @@ public class Main {
         for (int i = 0; i < llista.size(); i++) {
             compare(i, llista.get(i), llistaCopy.get(i));
         }
-
-        System.out.println("Comparar amb la llista clonada però invertida:");
-        for (int i = 0; i < llista.size(); i++) {
-            compare(i, llista.get(i), llistaCopy.get(llista.size() - i - 1));
-        }
     }
 
     static void compare (int i, Electrodomestic a, Electrodomestic b) {
