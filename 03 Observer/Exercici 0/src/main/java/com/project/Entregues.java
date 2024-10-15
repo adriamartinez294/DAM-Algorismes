@@ -4,16 +4,13 @@ import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 import java.util.ArrayList;
 
-public class Magatzem {
+public class Entregues {
     private PropertyChangeSupport llistaObservers = new PropertyChangeSupport(this);
-    private Entregues entregues;
 
-    private int capacitat;
     private ArrayList<Producte> productes;
-    public Magatzem(Entregues entregues) {
-        this.capacitat = 10;
+
+    public Entregues() {
         this.productes = new ArrayList<>();
-        this.entregues = entregues;
     }
 
     public void addPropertyChangeListener(String name, PropertyChangeListener listener) {
@@ -24,28 +21,15 @@ public class Magatzem {
         llistaObservers.removePropertyChangeListener(name, listener);
     }
 
-    public int getCapacitat() {
-        return capacitat;
-    }
-
-    public void setCapacitat(int newValue) {
-        int oldValue = this.capacitat;
-        if (oldValue != newValue) {
-            this.capacitat = newValue;
-            llistaObservers.firePropertyChange("capacitat", oldValue, newValue);
-        }
-    }
+    
 
     public ArrayList<Producte> getProductes() {
         return productes;
     }
 
     public void addProducte(Producte a) {
-        if (capacitat > 0) {
-            productes.add(a);
-            this.capacitat = this.capacitat - 1;
-            llistaObservers.firePropertyChange("addproducte", a.getId(), this.capacitat);
-        }
+        productes.add(a);
+        llistaObservers.firePropertyChange("addentrega", a.getId(), a.getNom());
     }
 
     public void removeProducte(int id) {
@@ -53,15 +37,12 @@ public class Magatzem {
             Producte obj = productes.get(i);
             if (obj.getId() == id) {
                 productes.remove(i);  // Elimina el elemento en el índice actual
-                this.capacitat = this.capacitat + 1;
-                entregues.addProducte(obj);
-                llistaObservers.firePropertyChange("removeproducte", obj.getId(), this.capacitat);
+                llistaObservers.firePropertyChange("removeentrega", obj.getId(), obj.getNom());
                 break;  // Detener el ciclo después de eliminar el objeto
             }
         }
     }
-
-    @Override
+    
     public String toString() {
         String a = "";
         for (Producte producte : productes) {
@@ -69,6 +50,4 @@ public class Magatzem {
         }
         return a;
     }
-    
-
 }

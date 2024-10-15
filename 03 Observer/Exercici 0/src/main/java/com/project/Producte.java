@@ -3,11 +3,11 @@ package com.project;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 
-public abstract class Producte {
+public class Producte {
     private PropertyChangeSupport llistaObservers = new PropertyChangeSupport(this);
 
     int id;
-    String nom
+    String nom;
 
     public Producte(int id, String nom) {
         this.id = id;
@@ -31,10 +31,19 @@ public abstract class Producte {
     }
 
     public void setNom(String newValue) {
-        int oldValue = this.nom;
+        String oldValue = this.nom;
         if (oldValue != newValue) {
             this.nom = newValue;
-            llistaObservers.firePropertyChange("id", oldValue, newValue);
+            llistaObservers.firePropertyChange("nom", oldValue, newValue);
         }
+    }
+
+    public void addPropertyChangeListener(String name, PropertyChangeListener listener) {
+        llistaObservers.addPropertyChangeListener(name, listener);
+    }
+
+    @Override
+    public String toString() {
+        return "Id: " + this.id + ", Nom: " + this.nom;
     }
 }

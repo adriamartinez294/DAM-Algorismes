@@ -17,6 +17,12 @@
     
     <dependencies>
         <!-- No hi ha dependències per a aquest exemple simple -->
+    
+      <dependency>
+        <groupId>org.scala-lang</groupId>
+        <artifactId>scala-library</artifactId>
+        <version>2.13.0</version>
+      </dependency>
     </dependencies>
     
     <build>
