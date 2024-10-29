@@ -8,5 +8,5 @@
     },
     "[dart]": {
         "editor.formatOnSave": true
-    },
+    }
 }
