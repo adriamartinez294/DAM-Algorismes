@@ -2,14 +2,14 @@ package com.project;
 
 import java.util.ArrayList;
 
-public class ObjPersonatge {
+public class ObjLlenguatge {
     private String nom;
     private String cognom;
     private String email;
     private int any;
     private ArrayList<String> aficions;
 
-    public ObjPersonatge(String nom, String cognom, String email, int any, ArrayList<String> aficions) {
+    public ObjLlenguatge(String nom, String cognom, String email, int any, ArrayList<String> aficions) {
         this.nom = nom;
         this.cognom = cognom;
         this.email = email;

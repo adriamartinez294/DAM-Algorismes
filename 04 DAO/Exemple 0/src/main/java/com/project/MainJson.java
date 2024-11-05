@@ -27,7 +27,7 @@ public class MainJson {
         aficions.add("Jugar");
         aficions.add("Fer-se el llest");
 
-        ObjPersonatge objOut = new ObjPersonatge("Doraemon", "Gat", "cosmic@dorayaki.jp", 1980, aficions);
+        ObjLlenguatge objOut = new ObjLlenguatge("Doraemon", "Gat", "cosmic@dorayaki.jp", 1980, aficions);
 
         try {
             // Escriure un objecte a Json 
@@ -64,7 +64,7 @@ public class MainJson {
                 aficionsInput.add(jsonAficionsInput.getString(i));
             }
 
-            ObjPersonatge objIn = new ObjPersonatge(nom, cognom, email, anyNaixement, aficionsInput);
+            ObjLlenguatge objIn = new ObjLlenguatge(nom, cognom, email, anyNaixement, aficionsInput);
             System.out.println("Persona: " + objIn);
 
         } catch (IOException e) {

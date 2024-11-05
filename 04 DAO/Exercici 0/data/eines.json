@@ -1,0 +1,44 @@
+[
+    {
+        "llenguatges": [
+            0,
+            1,
+            2,
+            4
+        ],
+        "id": 0,
+        "nom": "Visual Studio Code",
+        "any": 2015
+    },
+    {
+        "llenguatges": [
+            1,
+            2,
+            3
+        ],
+        "id": 1,
+        "nom": "Eclipse",
+        "any": 2001
+    },
+    {
+        "llenguatges": [0],
+        "id": 2,
+        "nom": "PyCharm",
+        "any": 2010
+    },
+    {
+        "llenguatges": [4],
+        "id": 3,
+        "nom": "RubyMine",
+        "any": 2012
+    },
+    {
+        "llenguatges": [
+            2,
+            3
+        ],
+        "id": 4,
+        "nom": "NetBeans",
+        "any": 1999
+    }
+]

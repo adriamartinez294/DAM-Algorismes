@@ -11,7 +11,7 @@ public class Main {
 
         Rentadora rentadora1 = new Rentadora("Rentadora bosch", "gris", 700, "bosch", "A", 2000, 100);
         Rentadora rentadora2 = new Rentadora("Rentadora LG", "blanc", 400, "LG", "B", 1400, 113);
-        Forn forn1 = new Forn("Forn balay", "blanc", 460, "balay", "A", 120, false);
+       DaoSoftware         daoEina = new DaoSoftware"blanc", 460, "balay", "A", 120, false);
         Forn forn2 = new Forn("Forn samsung", "gris", 790, "samsung", "B", 150, false);
         Nevera nevera1 = new Nevera("Nevera combi", "gris", 290, "combi", "A", 50, 60);
         Nevera nevera2 = new Nevera("Nevera samsung", "blanc", 290, "samsung", "B", 30, 60);

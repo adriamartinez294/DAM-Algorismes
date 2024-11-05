@@ -1,0 +1,65 @@
+[
+    {
+        "llenguatges": [0],
+        "id": 0,
+        "nom": "Django",
+        "any": 2005
+    },
+    {
+        "llenguatges": [1],
+        "id": 1,
+        "nom": "React",
+        "any": 2013
+    },
+    {
+        "llenguatges": [2],
+        "id": 2,
+        "nom": "Android Studio",
+        "any": 2013
+    },
+    {
+        "llenguatges": [3],
+        "id": 3,
+        "nom": "C++ Standard Library",
+        "any": 1998
+    },
+    {
+        "llenguatges": [4],
+        "id": 4,
+        "nom": "Rails",
+        "any": 2004
+    },
+    {
+        "llenguatges": [2],
+        "id": 5,
+        "nom": "Spring",
+        "any": 2003
+    },
+    {
+        "llenguatges": [1],
+        "id": 6,
+        "nom": "Node.js",
+        "any": 2009
+    },
+    {
+        "llenguatges": [0],
+        "id": 7,
+        "nom": "TensorFlow",
+        "any": 2015
+    },
+    {
+        "llenguatges": [
+            2,
+            4
+        ],
+        "id": 8,
+        "nom": "IntelliJ IDEA",
+        "any": 2001
+    },
+    {
+        "llenguatges": [1],
+        "id": 9,
+        "nom": "Bootstrap",
+        "any": 2011
+    }
+]
